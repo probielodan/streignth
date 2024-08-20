@@ -1,19 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import BottomTabs from './src/BottomTabs';
 import { NavigationContainer } from '@react-navigation/native';
+import RootStack from './src/RootStack';
+import { ThemeProvider } from './src/ThemeContext'; 
 
 function App(): JSX.Element {
   return (
-    <NavigationContainer>
-       <BottomTabs />
-    </NavigationContainer>
+    <ThemeProvider>
+      <NavigationContainer>
+        <RootStack />
+      </NavigationContainer>
+    </ThemeProvider>
   );
 }
 
