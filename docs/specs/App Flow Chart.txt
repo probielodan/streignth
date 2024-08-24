@@ -57,17 +57,17 @@ Home Screen
         +--> Nutrition
         |     |
         |     +--> Food Logging
-        |     |     |
-        |     |     +--> Daily Food Log
-        |     |     |     |
-        |     |     |     +--> Meal 1, Meal 2, etc.
-        |     |     |
-        |     |     +--> Macronutrient Goals
-        |     |     +--> Barcode Scanner
-        |     |     +--> Meal Plans
-        |     |           |
-        |     |           +--> Pre-Set Meal Plans
-        |     |           +--> User-Created Plans
+        |           |
+        |           +--> Daily Food Log
+        |           |     |
+        |           |     +--> Meal 1, Meal 2, etc.
+        |           |
+        |           +--> Macronutrient Goals
+        |           +--> Barcode Scanner
+        |           +--> Meal Plans
+        |                 |
+        |                 +--> Pre-Set Meal Plans
+        |                 +--> User-Created Plans
         |
         +--> Chat
         |     |

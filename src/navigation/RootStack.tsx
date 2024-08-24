@@ -1,9 +1,9 @@
 // src/RootStack.tsx
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import BottomTabs from './BottomTabs';
-import Workout from './Workout';
-import { useTheme } from './ThemeContext'; // Import your theme context
+import BottomTabs from '@components/BottomTabs';
+import { Workout } from '@screens/Dashboard';
+import { useTheme } from '@contexts/ThemeContext'; // Import your theme context
 
 const Stack = createStackNavigator();
 
@@ -22,15 +22,14 @@ function RootStack() {
         },
       }}
     >
-      <Stack.Screen 
-        name="HomeTabs" 
-        component={BottomTabs} 
-        options={{ headerShown: false }} 
+      <Stack.Screen
+        name="HomeTabs"
+        component={BottomTabs}
+        options={{ headerShown: false }}
       />
-      <Stack.Screen 
-        name="Workout" 
-        component={Workout} 
-        options={{ title: 'Workout' }} // Optionally set a title
+      <Stack.Screen
+        name="Workout"
+        component={Workout}
       />
     </Stack.Navigator>
   );

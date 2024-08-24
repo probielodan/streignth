@@ -9,9 +9,9 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
-import { useTheme } from './ThemeContext'; // Import your theme context
+import { useTheme } from '@contexts/ThemeContext'; // Import your theme context
 import { useNavigation } from '@react-navigation/native';
-import { HomeScreenNavigationProp } from './types'; // Import your navigation types
+import { HomeScreenNavigationProp } from '@types'; // Import your navigation types
 
 // Component for the workout image
 const WorkoutImage = ({ uri, title }: { uri: string, title: string }) => {
@@ -29,7 +29,7 @@ const WorkoutImage = ({ uri, title }: { uri: string, title: string }) => {
 };
 
 // Main Home component
-function Home(): React.JSX.Element {
+function Dashboard(): React.JSX.Element {
   const { isDarkMode } = useTheme(); // Use the theme context
   const backgroundStyle = {
     backgroundColor: isDarkMode ? '#000000' : '#ffffff',
@@ -49,7 +49,7 @@ function Home(): React.JSX.Element {
           <Text style={[styles.title, { color: isDarkMode ? '#ffffff' : '#000000' }]}>
             Featured Workouts
           </Text>
-          
+
           {/* Horizontal scroll view for suggested workouts */}
           <ScrollView
             horizontal
@@ -84,7 +84,8 @@ function Home(): React.JSX.Element {
             </Text>
             <View style={styles.workoutDetails}>
               <Image
-                source={{ uri: "https://images.unsplash.com/photo-1578229353624-a4007142da75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29ya291dCUyMGJpY2VwJTIwY3VybHxlbnwwfDF8MHx8fDI%3D"
+                source={{
+                  uri: "https://images.unsplash.com/photo-1578229353624-a4007142da75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29ya291dCUyMGJpY2VwJTIwY3VybHxlbnwwfDF8MHx8fDI%3D"
                 }}
                 style={styles.workoutDetailImage}
               />
@@ -165,4 +166,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Dashboard;

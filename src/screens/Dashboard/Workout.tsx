@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, Image, ScrollView, View } from 'react-native';
-import { useTheme } from './ThemeContext'; // Import your theme context
+import { useTheme } from '@contexts/ThemeContext'; // Import your theme context
 import { RouteProp, useRoute } from '@react-navigation/native';
 
 type WorkoutRouteParams = {

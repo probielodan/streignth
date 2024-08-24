@@ -7,7 +7,7 @@ import {
   Image
 } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { useTheme } from './ThemeContext';
+import { useTheme } from '@contexts/ThemeContext';
 
 function Profile() {
   const { isDarkMode } = useTheme();
@@ -39,7 +39,7 @@ function Profile() {
 
       <View>
         <Text style={[styles.profileName, { color: isDarkMode ? '#fff' : '#414d63' }]}>
-         Pair Programmer
+          Pair Programmer
         </Text>
 
         <Text style={[styles.profileAddress, { color: isDarkMode ? '#b0b0b0' : '#989898' }]}>

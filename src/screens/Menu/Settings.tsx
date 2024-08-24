@@ -9,7 +9,7 @@ import {
   Switch,
 } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { useTheme } from './ThemeContext';
+import { useTheme } from '@contexts/ThemeContext';
 
 function Settings() {
   const { isDarkMode, toggleDarkMode } = useTheme();
@@ -48,9 +48,9 @@ function Settings() {
           </TouchableOpacity>
 
           <View style={[
-              styles.row,
-              { backgroundColor: isDarkMode ? '#1f1f1f' : '#f2f2f2' },
-            ]}>
+            styles.row,
+            { backgroundColor: isDarkMode ? '#1f1f1f' : '#f2f2f2' },
+          ]}>
             <View style={[styles.rowIcon, { backgroundColor: '#007afe' }]}>
               <FeatherIcon color="#fff" name="moon" size={20} />
             </View>
@@ -89,9 +89,9 @@ function Settings() {
           </TouchableOpacity>
 
           <View style={[
-              styles.row,
-              { backgroundColor: isDarkMode ? '#1f1f1f' : '#f2f2f2' },
-            ]}>
+            styles.row,
+            { backgroundColor: isDarkMode ? '#1f1f1f' : '#f2f2f2' },
+          ]}>
             <View style={[styles.rowIcon, { backgroundColor: '#38C959' }]}>
               <FeatherIcon color="#fff" name="at-sign" size={20} />
             </View>
@@ -109,9 +109,9 @@ function Settings() {
           </View>
 
           <View style={[
-              styles.row,
-              { backgroundColor: isDarkMode ? '#1f1f1f' : '#f2f2f2' },
-            ]}>
+            styles.row,
+            { backgroundColor: isDarkMode ? '#1f1f1f' : '#f2f2f2' },
+          ]}>
             <View style={[styles.rowIcon, { backgroundColor: '#38C959' }]}>
               <FeatherIcon color="#fff" name="bell" size={20} />
             </View>
@@ -197,7 +197,7 @@ function Settings() {
             <FeatherIcon color={isDarkMode ? '#888' : '#C6C6C6'} name="chevron-right" size={20} />
           </TouchableOpacity>
 
-          
+
         </View>
       </ScrollView>
     </SafeAreaView>
