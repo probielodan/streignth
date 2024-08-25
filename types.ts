@@ -1,9 +1,16 @@
-// src/types.ts
 import { StackNavigationProp } from '@react-navigation/stack';
+import { StackScreenProps } from '@react-navigation/stack';
 
 export type RootStackParamList = {
-  Home: undefined;
-  Workout: { imageUri: string; title: string };
+  Onboarding: undefined;
+  SignUp: undefined;
+  Login: undefined;
+  BottomTabs: undefined;
+  ResetPassword: undefined;
 };
 
-export type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
+export type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'BottomTabs', 'Workout'>;
+export type LoginScreenProps = StackScreenProps<RootStackParamList, 'Login'>;
+export type SignUpScreenProps = StackScreenProps<RootStackParamList, 'SignUp'>;
+export type ResetPasswordScreenProps = StackScreenProps<RootStackParamList, 'ResetPassword'>;
+export type OnboardingScreenProps = StackScreenProps<RootStackParamList, 'Onboarding'>;

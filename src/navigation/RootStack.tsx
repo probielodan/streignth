@@ -1,38 +1,24 @@
-// src/RootStack.tsx
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import BottomTabs from '@components/BottomTabs';
-import { Workout } from '@screens/Dashboard';
-import { useTheme } from '@contexts/ThemeContext'; // Import your theme context
+import { BottomTabs } from '@components';
+import { Onboarding } from '@screens/Auth';
+import { SignUp } from '@screens/Auth';
+import { Login } from '@screens/Auth';
+import { ResetPassword } from '@screens/Auth';
+import { RootStackParamList } from '@types';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<RootStackParamList>();
 
-function RootStack() {
-  const { isDarkMode } = useTheme(); // Access the dark mode state
-
+const RootStack: React.FC = () => {
   return (
-    <Stack.Navigator
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: isDarkMode ? '#000000' : '#ffffff', // Apply dark mode background color
-        },
-        headerTintColor: isDarkMode ? '#ffffff' : '#000000', // Apply dark mode text color
-        cardStyle: {
-          backgroundColor: isDarkMode ? '#000000' : '#ffffff', // Apply dark mode background color
-        },
-      }}
-    >
-      <Stack.Screen
-        name="HomeTabs"
-        component={BottomTabs}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="Workout"
-        component={Workout}
-      />
+    <Stack.Navigator initialRouteName="Onboarding" screenOptions={{ headerShown: false }} >
+      <Stack.Screen name="Onboarding" component={Onboarding} />
+      <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="ResetPassword" component={ResetPassword} />
+      <Stack.Screen name="BottomTabs" component={BottomTabs} />
     </Stack.Navigator>
   );
-}
+};
 
 export default RootStack;

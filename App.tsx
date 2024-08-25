@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from '@contexts/ThemeContext';
 import { NavigationContainer } from '@react-navigation/native';
-import RootStack from '@navigation/RootStack';
+import { RootStack } from '@navigation';
 
 function App(): JSX.Element {
   return (

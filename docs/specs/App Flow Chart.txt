@@ -5,29 +5,27 @@ Home Screen
   |
   +--> User Login/Sign Up
   |
-  +--> Bottom Navigation
+  +--> Main Navigation
         |
         +--> Dashboard
         |     |
-        |     +--> Daily Tasks (Streignth Challenge)
+        |     +--> Daily Tasks
         |     |     |
-        |     |     +--> Stretch
-        |     |     +--> Train
-        |     |     +--> Read
-        |     |     +--> Elevate
-        |     |     +--> Improve
-        |     |     +--> Gratitude
-        |     |     +--> Nutrition
-        |     |     +--> Think
-        |     |     +--> Hydrate
-        |     |
+        |     |     +--> S.T.R.E.I.G.N.T.H. Challenge
+        |     |           |
+        |     |           +--> Stretch
+        |     |           +--> Train
+        |     |           +--> Read
+        |     |           +--> Elevate
+        |     |           +--> Improve
+        |     |           +--> Gratitude
+        |     |           +--> Nutrition
+        |     |           +--> Think
+        |     |           +--> Hydrate
+        |     |      
         |     +--> Weekly Tasks
         |     |     |
-        |     |     +--> User-chosen goal for the week based on:
-        |     |           - Mind
-        |     |           - Body
-        |     |           - Spirit
-        |     |           - Career (1 each)
+        |     |     +--> User-chosen goal for the week (Mind, Body, Spirit, Career)
         |     |
         |     +--> Today's Nutrition
         |           |
@@ -38,7 +36,7 @@ Home Screen
         |     +--> Workout Tracking
         |     |     |
         |     |     +--> Pre-Workout Survey
-        |     |     +--> Customized Daily Workouts
+        |     |     +--> Daily Workouts
         |     |           |
         |     |           +--> Instructions
         |     |           +--> Alternative Movements
@@ -46,42 +44,42 @@ Home Screen
         |     |
         |     +--> Exercise Library
         |           |
-        |           +--> Strength Training
-        |           +--> Cardio
-        |           +--> Flexibility/Stretching
-        |           +--> Yoga
-        |           +--> Pilates
-        |           +--> HIIT
-        |           +--> Bodyweight Exercises
+        |           +--> Categories
+        |                 |
+        |                 +--> Strength Training
+        |                 +--> Cardio
+        |                 +--> Flexibility/Stretching
+        |                 +--> Yoga
+        |                 +--> Pilates
+        |                 +--> HIIT
+        |                 +--> Bodyweight Exercises
         |
         +--> Nutrition
         |     |
         |     +--> Food Logging
+        |     |     |
+        |     |     +--> Daily Log (Meal 1, Meal 2, etc.)
+        |     |
+        |     +--> Macronutrient Goals
+        |     +--> Barcode Scanner
+        |     +--> Meal Plans
         |           |
-        |           +--> Daily Food Log
-        |           |     |
-        |           |     +--> Meal 1, Meal 2, etc.
-        |           |
-        |           +--> Macronutrient Goals
-        |           +--> Barcode Scanner
-        |           +--> Meal Plans
-        |                 |
-        |                 +--> Pre-Set Meal Plans
-        |                 +--> User-Created Plans
+        |           +--> Pre-Set Meal Plans
+        |           +--> User-Created Plans
         |
         +--> Chat
         |     |
         |     +--> Communication with Coaches
         |           |
-        |           +--> Contact with Streignth Certified Trainer
+        |           +--> Contact Streignth Trainer
         |
         +--> Menu
               |
-              +--> Settings and Profile
+              +--> Settings & Profile
                     |
                     +--> My Profile
                     +--> Contact Info
-                    +--> Nutrition
                     +--> Notifications
                     +--> Announcements
                     +--> My Coach
+                    +--> Nutrition Preferences

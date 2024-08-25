@@ -9,11 +9,10 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
-import { useTheme } from '@contexts/ThemeContext'; // Import your theme context
+import { useTheme } from '@contexts/ThemeContext';
 import { useNavigation } from '@react-navigation/native';
-import { HomeScreenNavigationProp } from '@types'; // Import your navigation types
+import { HomeScreenNavigationProp } from '@types';
 
-// Component for the workout image
 const WorkoutImage = ({ uri, title }: { uri: string, title: string }) => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
@@ -28,11 +27,11 @@ const WorkoutImage = ({ uri, title }: { uri: string, title: string }) => {
   );
 };
 
-// Main Home component
 function Dashboard(): React.JSX.Element {
-  const { isDarkMode } = useTheme(); // Use the theme context
+  const { isDarkMode } = useTheme();
   const backgroundStyle = {
     backgroundColor: isDarkMode ? '#000000' : '#ffffff',
+    flex: 1
   };
 
   return (

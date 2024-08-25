@@ -1,11 +1,11 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "./src", // Set base URL to the src folder
+    "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
+      "@components": ["components"],
       "@screens/*": ["screens/*"],
-      "@navigation/*": ["navigation/*"],
+      "@navigation": ["navigation"],
       "@contexts/*": ["contexts/*"],
       "@styles/*": ["styles/*"],
       "@types": ["../types.ts"]
