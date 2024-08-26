@@ -11,7 +11,6 @@ module.exports = {
           '@navigation': './src/navigation',
           '@contexts': './src/contexts',
           '@styles': './src/styles',
-          "@types": "types.ts"
         },
       },
     ],

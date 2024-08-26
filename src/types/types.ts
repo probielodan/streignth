@@ -1,5 +1,4 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import { StackScreenProps } from '@react-navigation/stack';
+import { StackNavigationProp, StackScreenProps } from '@react-navigation/stack';
 
 export type RootStackParamList = {
   Onboarding: undefined;

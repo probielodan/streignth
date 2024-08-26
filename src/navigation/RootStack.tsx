@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { BottomTabs } from '@components';
+import { BottomTabs } from '@navigation';
 import { Onboarding } from '@screens/Auth';
 import { SignUp } from '@screens/Auth';
 import { Login } from '@screens/Auth';

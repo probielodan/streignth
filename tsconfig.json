@@ -8,7 +8,7 @@
       "@navigation": ["navigation"],
       "@contexts/*": ["contexts/*"],
       "@styles/*": ["styles/*"],
-      "@types": ["../types.ts"]
+      "@types": ["types/types.ts"]
     }
   }
 }
